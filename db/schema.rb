@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_27_145142) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_28_183639) do
+  create_table "foods", force: :cascade do |t|
+    t.string "name"
+    t.integer "calories"
+    t.float "fat"
+    t.float "carbs"
+    t.float "protein"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email"
     t.string "password_digest"
