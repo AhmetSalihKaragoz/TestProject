@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "home#index"
+  root "foods#index"
 
   get "sign_up", to: "registrations#new"
   post "sign_up", to: "registrations#create"
@@ -12,6 +12,6 @@ Rails.application.routes.draw do
 
   delete "sign_out", to: "sessions#destroy"
 
-  get 'foods/:id', to: 'foods#show', as: 'food'
-  
+  get '/foods/:id', to: 'foods#show', as: 'foods_show'
+
 end
