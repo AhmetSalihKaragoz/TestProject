@@ -1,0 +1,10 @@
+-----------------Sunum-------------------
+
+1- Ruby:
+2- Rails geliştirme ortamı ve terminal komutları:
+3- MVC mimarisi ve rails üzerinde nasıl uygulandığı:
+4- Rails kavramları: Model, View, Controller, Routes, Migration, ActiveRecord & AppController etc...
+5- Convention over configuration dizayn konsepti nedir ve neleri kapsar?
+--------------Yapılanlar-------------
+6- Basit uygulama geliştirme => CRUD fonksiyonları ve rails üzerinde uygulanması => Rehber eşliğinde otomasyon proje kurulumu ve büyük resmi görmek.
+7- Gerçeğe yakın uygulama planlama ve oluşturma. => Scaffold kullanmadan ve gem kullanımını minimuma indirerek bir uygulama yapıp temelleri daha iyi kavrama.
