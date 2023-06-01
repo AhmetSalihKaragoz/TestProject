@@ -1,0 +1,10 @@
+<div>
+  <% if @meal_plans.any? %>
+    <h1 style="color: blue;">My Meal Plans</h1>
+    <% @meal_plans.each do |meal_plan| %>
+      <h3 style="color: red;"><%= meal_plan.name %></h3>
+    <% end %>
+  <% else %>
+    <p>No meal plans found.</p>
+  <% end %>
+</div>

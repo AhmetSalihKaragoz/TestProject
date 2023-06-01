@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
   <div class="container-fluid">
-    <%= link_to "Navbar", root_path, class: "navbar-brand" %>
+    <%= link_to "Navbar", root_path, class: "navbar-brand", style:"color: forestgreen;" %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -12,11 +12,14 @@
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <% if Current.user %>
-          <li class="nav-item">
-            <%= link_to Current.user.email, edit_password_path, class: "nav-link" %>
+          <li>
+            <%= link_to "Add New Plan", new_plan_path, class: "nav-link", style:"color: forestgreen;" %>
           </li>
           <li class="nav-item">
-            <%= button_to "Logout", sign_out_path, method: :delete, class: "btn btn-outline-secondary" %>
+            <%= link_to Current.user.email, edit_password_path, class: "nav-link"%>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Logout", sign_out_path, method: :delete, class: "btn btn-outline-secondary" %>
           </li>
         <% else %>
           <li class="nav-item">

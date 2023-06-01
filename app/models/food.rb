@@ -1,11 +1,11 @@
 class Food < ApplicationRecord
-    def self.ransackable_attributes(auth_object = nil)
-        ["calories", "carbs", "created_at", "fat", "id", "name", "protein", "updated_at"]
-    end
+    has_and_belongs_to_many :meal_plans
 
-    def self.ransackable_associations(auth_object = nil)
-        []
-    end
+    validates :name, presence: true
+    validates :calories, presence: true
+    validates :carbs, presence: true
+    validates :protein, presence: true
+    validates :fat, presence: true
     def self.create_food_if_not_exist(food_data)
         Food.create(
           name: food_data['label'],

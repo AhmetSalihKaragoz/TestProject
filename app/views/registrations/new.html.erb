@@ -4,9 +4,7 @@
 <%= form_with model: @user, url: sign_up_path, local: true, data: {turbo:false}  do |form| %>
   <%if @user.errors.any?%>
     <div class= "alert alert-danger">
-      <%puts "here"%>
       <% @user.errors.full_messages.each do |message| %>
-        <%puts "also here"%>
         <div><%= message %></div>
       <% end %>
     </div>

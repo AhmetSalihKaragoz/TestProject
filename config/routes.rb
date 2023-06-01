@@ -14,4 +14,10 @@ Rails.application.routes.draw do
 
   get '/foods/:id', to: 'foods#show', as: 'foods_show'
 
+  get 'meal_plans', to: 'meal_plans#show', as: 'meal_plans'
+
+  get 'create_plans/new', to: 'create_plans#new', as: 'new_plan'
+  post 'create_plans', to: 'create_plans#create', as: 'create_plan'
+
+
 end
